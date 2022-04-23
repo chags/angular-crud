@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Mantidade</mat-label>
+    <input type="number" matInput [(ngModel)]="data.quantity">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" (click)="on"cdkFocusInitial>Salvar</button>
+</div>
