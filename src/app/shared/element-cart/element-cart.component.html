@@ -1,11 +1,15 @@
-<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<h2 mat-dialog-title>Insira a quantidade</h2>
 <div mat-dialog-content>
   <mat-form-field appearance="fill">
-    <mat-label>Mantidade</mat-label>
+    <mat-label>Quantidade</mat-label>
     <input type="number" matInput [(ngModel)]="data.quantity">
+  </mat-form-field >
+  <mat-form-field appearance="fill" class="invisible">
+    <input type="text" matInput [(ngModel)]="data.product">
   </mat-form-field>
+
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onClick()">Cancelar</button>
-  <button mat-button [mat-dialog-close]="data" (click)="on"cdkFocusInitial>Salvar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Salvar</button>
 </div>

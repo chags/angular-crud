@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 import { PeriodicElement } from '../models/PeriodicElement';
-//essa clasee só trata do crud com DB
+//essa clase só trata do crud com DB
 @Injectable()
 export class PeriodicElementService {
     elementApiUrl = 'http://localhost:3000/usuarios';

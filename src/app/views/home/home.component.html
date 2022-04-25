@@ -1,5 +1,9 @@
 <div class="container">
-    <button mat-button color="primary" (click)="openDialog(null)" >Adicionar Cadastro</button> 
+  <div class="example-button-container">
+    <button (click)="openDialog(null)" mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+      <mat-icon>person_add</mat-icon>
+    </button>
+  </div><br>
 <table mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="matricula">
       <th mat-header-cell *matHeaderCellDef> Matricula </th>

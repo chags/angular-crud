@@ -10,14 +10,18 @@ import { PeriodicElement } from 'src/app/views/shop/shop.component';
 export class ElementCartComponent implements OnInit {
   element!: PeriodicElement;
   constructor( 
-    
     @Inject(MAT_DIALOG_DATA) 
     public data: PeriodicElement,
     public dialogRef: MatDialogRef<ElementCartComponent>,) {}
 
   ngOnInit(): void {
+    if(this.element.quantity > 1){
+      this.element.quantity = 1;
+    }
   }
+
   onClick(): void {
     this.dialogRef.close();
   }
+
 }
