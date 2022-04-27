@@ -4,10 +4,18 @@
     <mat-label>Quantidade</mat-label>
     <input type="number" matInput [(ngModel)]="data.quantity">
   </mat-form-field >
-  <mat-form-field appearance="fill" class="invisible">
+  <mat-form-field appearance="fill">
     <input type="text" matInput [(ngModel)]="data.product">
   </mat-form-field>
-
+  <mat-form-field appearance="fill">
+    <input type="text" matInput [(ngModel)]="data.price">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input type="text" matInput [(ngModel)]="data.img">
+  </mat-form-field> 
+  <mat-form-field appearance="fill" >
+    <input type="text" matInput [(ngModel)]="data.position">
+  </mat-form-field>    
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onClick()">Cancelar</button>

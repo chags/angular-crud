@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     public dialog: MatDialog,
     public PeriodicElementService: PeriodicElementService
     ) {
-      this.PeriodicElementService.getElement()
+      this.PeriodicElementService.getElement('usuarios')
       .subscribe((data: PeriodicElement[]) => {
         this.dataSource = data;
       });
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
        // console.log(result);
         if (this.dataSource.map(p => p.id).includes(result.id)) {
           // console.log(result);
-            this.PeriodicElementService.editElements(result)
+            this.PeriodicElementService.editElements(result, 'usuarios')
             .subscribe((data: PeriodicElement) => {
               const index = this.dataSource.findIndex(p => p.id === data.id);
               this.dataSource[index] = data; 
@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
             });
 
         }else{
-          this.PeriodicElementService.createElements(result)
+          this.PeriodicElementService.createElements(result, 'usuarios')
           .subscribe((data: PeriodicElement)=>{
             this.dataSource.push(data);
             this.table.renderRows();
@@ -81,9 +81,9 @@ export class HomeComponent implements OnInit {
   editElement(element: PeriodicElement): void{
     this.openDialog(element);
   }
-  //deletando linha na tabela 
+  //deletando registro na tabela 
   deleteElement(matricula: number): void{
-    this.PeriodicElementService.deleteElements(matricula)
+    this.PeriodicElementService.deleteElements(matricula,'usuarios')
     .subscribe(()=>{
        this.dataSource = this.dataSource.filter(p => p.id !== matricula)
     });

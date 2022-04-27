@@ -3,7 +3,7 @@
     {
       "id": 2,
       "matricula": "548",
-      "nome": "lorena chagas",
+      "nome": "Lorena Maria chagas",
       "date": "11/07/1988",
       "cpf": "2548547485",
       "email": "lorena@th7.com.br"
@@ -14,77 +14,67 @@
       "nome": "Francisco cristiano chagas",
       "date": "11/07/1977",
       "cpf": "25478548632",
-      "email": "cris@cris.com"
+      "email": "cristiano.chagas@th7.com.br"
     },
     {
-      "matricula": "6151",
-      "nome": "Luana Barrros",
-      "date": "11/07/1988",
-      "cpf": "2547854854",
-      "email": "luana.barros@gmail.com",
+      "matricula": "2020",
+      "nome": "Cristine Santos Chagas",
+      "date": "005/12/2000",
+      "cpf": "21436578598",
+      "email": "cristine.chagas@g,ail.com",
+      "id": 4
+    },
+    {
+      "matricula": "5478",
+      "nome": "Loren Santos chagas",
+      "date": "10/07/2009",
+      "cpf": "78541236598",
+      "email": "lorenchagas@gmail.com",
       "id": 5
+    },
+    {
+      "id": 6,
+      "matricula": "254",
+      "nome": "Anne Chagas",
+      "date": "05/12/2020",
+      "cpf": "25414589632",
+      "email": "anne@gmail.com"
     }
   ],
   "produtos": [
     {
+      "id": 1,
       "position": 1,
-      "product": "Deseja de notas as nações",
-      "price": 1.0079,
-      "quantity": 10
-    },
-    {
-      "position": 2,
-      "product": "porfetas e reis",
-      "price": 4.0026,
-      "quantity": 11
-    },
-    {
-      "position": 3,
-      "product": "Patricarcas e profetas",
-      "price": 56.941,
-      "quantity": 22
-    },
-    {
-      "position": 4,
-      "product": "Pela graça de Deus",
-      "price": 9.0122,
-      "quantity": 7465
-    },
-    {
-      "position": 5,
-      "product": "Grande Conflito",
-      "price": 10.811,
-      "quantity": 78
-    },
-    {
-      "position": 6,
+      "img": "/assets/vida.jpg",
       "product": "Vida de Jesus",
-      "price": 12.0107,
-      "quantity": 7878
+      "price": 120,
+      "quantity": 4000
     },
     {
-      "position": 7,
-      "product": "Lição da escola Sabatina",
-      "price": 14.0067,
-      "quantity": 7887
+      "id": 2,
+      "position": 2,
+      "img": "/assets/desejado.jpg",
+      "product": "Desejado de todas as Nações",
+      "price": 80,
+      "quantity": 3000
     },
     {
-      "position": 8,
-      "product": "Meditação juvenil",
-      "price": 15.9994,
-      "quantity": 7878
-    },
+      "id": 3,
+      "position": 3,
+      "img": "/assets/conflito.jpg",
+      "product": "O Grande conflito",
+      "price": 25,
+      "quantity": 3000
+    }
+  ],
+  "carrinho": [
     {
-      "position": 9,
-      "product": "Biblia sagrada",
-      "price": 18.9984,
-      "quantity": 7878
-    },
-    {
-      "position": 10,
-      "product": "Revista nosso amiguinho",
-      "price": 20.1797,
-      "quantity": 7878
+      "id": 3,
+      "img": "/assets/conflito.jpg",
+      "position": 3,
+      "product": "O Grande conflito",
+      "price": 25,
+      "quantity": 4
     }
   ]
 }

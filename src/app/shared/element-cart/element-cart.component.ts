@@ -1,6 +1,6 @@
 import { Component,Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { PeriodicElement } from 'src/app/views/shop/shop.component';
+import { PeriodicCart } from 'src/app/models/PeriodicElement';
 
 @Component({
   selector: 'app-element-cart',
@@ -8,16 +8,14 @@ import { PeriodicElement } from 'src/app/views/shop/shop.component';
   styleUrls: ['./element-cart.component.css']
 })
 export class ElementCartComponent implements OnInit {
-  element!: PeriodicElement;
+  element!: PeriodicCart;
   constructor( 
     @Inject(MAT_DIALOG_DATA) 
-    public data: PeriodicElement,
+    public data: PeriodicCart,
     public dialogRef: MatDialogRef<ElementCartComponent>,) {}
 
   ngOnInit(): void {
-    if(this.element.quantity > 1){
-      this.element.quantity = 1;
-    }
+ 
   }
 
   onClick(): void {

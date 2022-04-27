@@ -35,3 +35,6 @@ table {
     justify-content: left;
     width: 120px;
   }
+  .paddingImg{
+    padding: 10px 5px 5px 5px;
+}
