@@ -75,6 +75,14 @@
       "product": "O Grande conflito",
       "price": 25,
       "quantity": 4
+    },
+    {
+      "id": 2,
+      "img": "/assets/desejado.jpg",
+      "position": 2,
+      "product": "Desejado de todas as Nações",
+      "price": 80,
+      "quantity": 2
     }
   ]
 }

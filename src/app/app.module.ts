@@ -19,6 +19,8 @@ import{FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ShopComponent } from './views/shop/shop.component';
 import { ElementCartComponent } from './shared/element-cart/element-cart.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +45,7 @@ import { ElementCartComponent } from './shared/element-cart/element-cart.compone
     MatFormFieldModule,
     MatInputModule,
     FormsModule
+
 
   ],
   providers: [],

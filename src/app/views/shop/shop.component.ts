@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTable } from '@angular/material/table';
 import { PeriodicCart, PeriodicProduct } from 'src/app/models/PeriodicElement';
@@ -77,3 +78,4 @@ openDialog(element: PeriodicProduct): void {
     this.openDialog(element);
   }
 }
+

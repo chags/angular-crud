@@ -2,6 +2,8 @@ import { Component,Inject, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { PeriodicElement} from 'src/app/models/PeriodicElement';
 
+
+
 @Component({
   selector: 'app-element-dialog',
   templateUrl: './element-dialog.component.html',
@@ -27,4 +29,8 @@ export class ElementDialogComponent implements OnInit {
  onCancel(): void {
     this.dialogRef.close();
   }
+
 }
+
+ 
+
